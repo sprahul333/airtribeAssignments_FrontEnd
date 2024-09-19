@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sample Forms</title>
+</head>
+
+<body>
+    <h2>Automation Details Form</h2>
+    <form id="automationForm">
+        <!-- Release Number -->
+        <label for="releaseNumber">Release Number:</label>
+        <select id="releaseNumber" name="releaseNumber">
+            <option value="">Select Release Number</option>
+            <option value="Release 1.0">Release 1.0</option>
+            <option value="Release 2.0">Release 2.0</option>
+            <option value="Release 3.0">Release 3.0</option>
+        </select>
+
+        <!-- Automation State -->
+        <label for="automationState">Automation State:</label>
+        <select id="automationState" name="automationState">
+            <option value="">Select Automation State</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+            <option value="Pending">Pending</option>
+        </select>
+
+        <!-- Automation Status -->
+        <label for="automationStatus">Automation Status:</label>
+        <select id="automationStatus" name="automationStatus">
+            <option value="">Select Automation Status</option>
+            <option value="Passed">Passed</option>
+            <option value="Failed">Failed</option>
+            <option value="Blocked">Blocked</option>
+        </select>
+
+        <!-- Suite Name -->
+        <label for="suiteName">Suite Name:</label>
+        <select id="suiteName" name="suiteName" onchange="toggleRegressionType()">
+            <option value="">Select Suite Name</option>
+            <option value="Suite A">Suite A</option>
+            <option value="Suite B">Suite B</option>
+            <option value="Suite C">Suite C</option>
+            <option value="Regression">Regression</option>
+        </select>
+
+        <!-- Regression Type -->
+        <label for="regressionType">Regression Type:</label>
+        <select id="regressionType" name="regressionType" disabled>
+            <option value="">Select Regression Type</option>
+            <option value="Full Regression">Full Regression</option>
+            <option value="Smoke">Smoke</option>
+            <option value="Sanity">Sanity</option>
+        </select>
+
+        <!-- Job Dependency -->
+        <label for="jobDependency">Job Dependency:</label>
+        <select id="jobDependency" name="jobDependency">
+            <option value="">Select Job Dependency</option>
+            <option value="Job A">Job A</option>
+            <option value="Job B">Job B</option>
+            <option value="Job C">Job C</option>
+        </select>
+
+        <!-- DB Validations -->
+        <label for="dbValidations">DB Validations:</label>
+        <select id="dbValidations" name="dbValidations">
+            <option value="">Select DB Validation</option>
+            <option value="Validation 1">Validation 1</option>
+            <option value="Validation 2">Validation 2</option>
+            <option value="Validation 3">Validation 3</option>
+        </select>
+
+        <!-- Environment -->
+        <label for="environment">Environment:</label>
+        <select id="environment" name="environment">
+            <option value="">Select Environment</option>
+            <option value="Production">Production</option>
+            <option value="Staging">Staging</option>
+            <option value="Development">Development</option>
+            <option value="Testing">Testing</option>
+        </select>
+
+        <!-- Cases Long Time -->
+        <label for="casesLongTime">Cases Long Time:</label>
+        <select id="casesLongTime" name="casesLongTime">
+            <option value="">Select Cases Long Time</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <!-- Submit Button -->
+        <button type="button">Submit</button>
+    </form>
+
+</body>
+
+</html>
