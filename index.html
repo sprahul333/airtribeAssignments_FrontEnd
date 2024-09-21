@@ -1,0 +1,168 @@
+<html>
+<head>
+    <title>AirTribe Assignment</title>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <p>
+        Sometimes it's the first moment of the day that catches you off guard. That's what Wendy was thinking. She opened her window to see fire engines screeching down the street. While this wasn't something completely unheard of, it also wasn't normal. It was a sure sign of what was going to happen that day. She could feel it in her bones and it wasn't the way she wanted the day to begin.
+    </p>
+
+    <img src = "https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg"/>
+    
+
+    <source src="" type="video/mp4"></source>
+
+    <!-- Headings (Different Sizes where the page rendering will be same)-->
+    <h1>Welcome to the AirTribe Demo Session</h1>
+    <h2>Welcome to the AirTribe Demo Session</h2>
+    <h3>Welcome to the AirTribe Demo Session</h3>
+    <h4>Welcome to the AirTribe Demo Session</h4>
+    <h5>Welcome to the AirTribe Demo Session</h5>
+    <h6>Welcome to the AirTribe Demo Session</h6>
+
+    <!--Paragraph ( Used for maintaining larger data)-->
+    <p>
+        Sometimes it's the first moment of the day that catches you off guard. That's what Wendy was thinking. he opened her window to see fire engines screeching down the street. While this wasn't something completely unheard of, it also wasn't normal. 
+        It was a sure sign of what was going to happen that day. She could feel it in his bones and it wasn't the way he wanted the day to begin.
+    </p>
+
+    <!-- Links -->
+    <a href="https://randomwordgenerator.com/paragraph.php">Visit Random Paragraph</a>
+
+    <br/>
+    <br/>
+    <!-- Opens the link in new tab-->
+    <a href="https://www.cricbuzz.com", target="_blank">cricbuzz Application</a>
+
+    <br/>
+    <br/>
+    <!-- Linking the file that is present in the same folder-->
+     <!-- Always put the file path that is present in the current directory or the previous directory -->
+     <!-- Security Policy for a browser is that it does not allow us to access the system, so system path should not be shared which is present locally-->
+    <a href="Dashboard.html">Navigating to Dashboard Screen</a>
+
+    <!--UnOrdered List-->
+    <div>
+        Here is my new List
+        <ul>
+            <li>Milk</li>
+            <li>Eggs</li>
+            <li>Cashew</li>
+        </ul>
+    </div>
+
+    <!-- Ordered List-->
+     <div>
+        Here is my ordered list
+        <ol>
+            <li>New Place</li>
+            <li>In Making</li>
+            <li>To do new stuff</li>
+        </ol>
+     </div>
+
+     <!--Definition Lists-->
+     <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+     </dl>
+
+     <!--Image Sizing-->
+
+     <img src="https://www.rd.com/wp-content/uploads/2021/06/GettyImages-1316660523-e1624547752835.jpg"
+      alt="Dogs Image (Cute)"
+      width="300"
+      height="400"/>
+
+      <!--forms-->
+      <!--Actions will help u navigate through that page once the form is submitted succesfully along with the data that we have submitted-->
+      <!--Method will be the type of Backend operation to be performed-->
+      <form action="/submit" method="POST">
+
+        <label for="firstName">Name</label>
+        <input name="firstName" id="firstName" type="text"/>
+
+        <label for="Email">Email</label>
+        <input name="Email" id="Email" type="text"/>
+
+        <label for="Ticket Type">Ticket Type</label>
+        <select name="Ticket Type" id="Ticket Type">
+            <option value="vip">VIP</option>
+            <option value="general">general</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Different Types of Input Fields-->
+
+      <!-- Text Input-->
+
+      <input type="text" name="username" placeholder="Enter Your UserName"/>
+
+      <!-- Email Input -->
+      <!-- By Default it will perform the email validations--> 
+      <input type="email" name="emailId" placeholder="Enter your Email ID"/>
+
+      <!-- Password input-->
+      <input type="password" name="passswordValue" placeholder="Enter Your Password"/>
+
+      <!--Number input-->
+      <input type="number" name="phoneNumber" placeholder="Enter your Phone Number"/>
+
+      <div>
+        <br/>
+      <!-- CHeckbox Input-->
+       <!-- id attribute should be unique across all the web pages, it should not have duplicate values-->
+       <label for="ageEligibility">Are you 18 years or greater??</label>
+
+       
+       <input type="checkbox" name="checkboxSelection" value="Yes"/>
+       <label for="Yes">Yes</label>
+       <input type="checkbox" name="checkboxSelection" value="No"/>
+       <label for="No">NO</label>
+
+       <!-- span is also same like div where they are used to group multiple elements -->
+    </div> <!-- Differentiate this with other fields, increases the readbility-->
+
+       <div>
+       <!-- Radio Button-->
+        <label>Choose Your Subscription Plan:</label>
+        
+        <br/>
+
+        <input type="radio" name="radioButton" id="basic" value="basic"/>
+        <label for="basic">Basic</label>
+
+        <br/>
+        <input type="radio" name="radioButton" id="Premium" value="premiun"/>
+        <label for="Premium">Premium</label>
+    </div>
+
+    <!-- Text Area-->
+     <textarea name="Comments" rows="20" columns="45" placeholder="Hola"></textarea>
+
+     <header></header>
+     <footer>&copy; Sai Rahul Paluvai</footer>
+
+     <!-- Semantic Elements are meaningful provide information about the content they contain-->
+      <!-- Semantic Element -- These elements clearly describe their meaning to both the browser and the developer. Examples include <header>, <footer>, and <article>. Semantic elements can help search engines understand the context of web content, improve accessibility, and make maintenance easier for developers.-->
+    
+        <!--Non Semantic Elements-->
+        <!--Very Generic in nature which can be modified later-->
+        <!-- These elements do not provide any information about their content and are primarily used for layout and styling purposes. Examples include <div> and . Non-semantic elements can make it harder for search engines and screen readers to understand the structure of a web page -->
+
+        <iframe width="853" height="480"
+            src="https://www.youtube.com/embed/YxfabbAQTnE" 
+            title="Fun &amp; Fierce Full Interview #Devara | NTR, Koratala Siva, Siddhu Jonnalagadda, Vishwaksen | Sep27" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+</body>
+</html>
