@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SRTA-Automation Report</title>
+  <link rel="stylesheet" type="text/css" href="failedcasesstyles.css">
+  <script src="failedcasesscript.js" defer></script>
+</head>
+<body>
+
+  <h1>Failed Cases Triggering and Report Generation</h1>
+
+  <form>
+    <div>
+      <label for="releaseNumber">Release Number:</label>
+      <select name="releaseNumber" id="releaseNumber">
+        <option value="0" selected disabled>--Select--</option>
+<option value="V1.0.0.2.999CReg_SIT">V1.0.0.2.999CReg_SIT</option>
+<option value="V1.0.0.0.09CRegQASIT_DBFalse">V1.0.0.0.09CRegQASIT_DBFalse</option>
+<option value="V1.0.0.0.09CReg_DBFalse">V1.0.0.0.09CReg_DBFalse</option>
+<option value="V1.0.0.1.01CReg_PlannedFETrue">V1.0.0.1.01CReg_PlannedFETrue</option>
+<option value="V1.0.0.1.0001CReg_SIT">V1.0.0.1.0001CReg_SIT</option>
+<option value="V1.0.0.1.0402CReg">V1.0.0.1.0402CReg</option>
+<option value="V1.0.0.1.0402CReg_SITMachines">V1.0.0.1.0402CReg_SITMachines</option>
+<option value="V1.0.0.0.01CReg_PlannedFinance">V1.0.0.0.01CReg_PlannedFinance</option>
+<option value="V1.0.0.1.01CReg_PlannedFinance">V1.0.0.1.01CReg_PlannedFinance</option>
+<option value="V1.0.0.1.0402CRegPrasad">V1.0.0.1.0402CRegPrasad</option>
+<option value="V1.0.0.0.01CReg_Planned">V1.0.0.0.01CReg_Planned</option>
+<option value="V1.0.0.1.843CReg">V1.0.0.1.843CReg</option>
+<option value="V1.0.0.13.07CReg_PlannedFunctional">V1.0.0.13.07CReg_PlannedFunctional</option>
+<option value="V1.0.0.1.999CReg">V1.0.0.1.999CReg</option>
+<option value="V1.0.0.0.01CReg_PlannedFETrue">V1.0.0.0.01CReg_PlannedFETrue</option>
+      </select>
+      <br/><br/>
+
+      <label for="environment">Environment:</label>
+      <select name="environment" id="environment">
+        <option value="0" selected disabled>--Select--</option>
+<option value="SRTAQA">SRTAQA</option>
+<option value="SRTAQASIT">SRTAQASIT</option>
+      </select>
+      <br/><br/>
+
+      <label for="environmentToBeExecuted">Environment To Be Executed:</label>
+      <select name="environmentToBeExecuted" id="environmentToBeExecuted">
+        <option value="0" selected disabled>--Select--</option>
+<option value="SRTAQA">SRTAQA</option>
+<option value="SRTAQASIT">SRTAQASIT</option>
+      </select>
+      <br/><br/>
+
+      <label for="suiteName">Suite Name:</label>
+      <select name="suiteName" id="suiteName">
+        <option value="0" selected disabled>--Select--</option>
+<option value="Smoke">Smoke</option>
+<option value="Regression">Regression</option>
+      </select>
+      <br/><br/>
+
+      <label for="modulesList">Modules List:</label>
+      <select name="modulesList" id="modulesList" multiple>
+        <option value="0" selected disabled>--Select--</option>
+        <option value="All">All</option>
+<option value="ViolationManagement">ViolationManagement</option>
+<option value="InventoryManagement">InventoryManagement</option>
+<option value="TransactionManagement">TransactionManagement</option>
+<option value="Billing">Billing</option>
+<option value="IMC">IMC</option>
+<option value="AccountManagement">AccountManagement</option>
+<option value="PaymentManagement">PaymentManagement</option>
+<option value="CaseManagement">CaseManagement</option>
+      </select>
+      <br/><br/>
+
+      <label for="automationStatus">Automation Status:</label>
+      <select name="automationStatus" id="automationStatus">
+        <option value="0" selected disabled>--Select--</option>
+        <option value="All">All</option>
+<option value="Planned">Planned</option>
+<option value="NotAutomated">NotAutomated</option>
+      </select>
+      <br/><br/>
+
+      <label for="automationStates">Automation State:</label>
+      <select name="automationStates" id="automationStates">
+        <option value="0" selected disabled>--Select--</option>
+        <option value="All">All</option>
+<option value="AutomationReview">AutomationReview</option>
+<option value="ReadyForQA">ReadyForQA</option>
+<option value="Duplicate">Duplicate</option>
+<option value="Invalid">Invalid</option>
+<option value="ScriptCompleted">ScriptCompleted</option>
+<option value="NotAutomatable">NotAutomatable</option>
+<option value="Blocked">Blocked</option>
+<option value="ReadyForAutomation">ReadyForAutomation</option>
+      </select>
+      <br/><br/>
+
+      <label for="typeOfRegression">Type of Regression:</label>
+      <select name="typeOfRegression" id="typeOfRegression">
+        <option value="0" selected disabled>--Select--</option>
+<option value="EndToEnd">EndToEnd</option>
+<option value="Functional">Functional</option>
+<option value="User Interface">User Interface</option>
+<option value="Complete Regression">Complete Regression</option>
+      </select>
+      <br/><br/>
+
+      <label for="typeOfExecutions">Type Of Executions:</label>
+      <select name="typeOfExecutions" id="typeOfExecutions">
+        <option value="0" selected disabled>--Select--</option>
+<option value="Trigger Executions">Trigger Executions</option>
+<option value="Generate Runner File">Generate Runner File</option>
+      </select>
+      <br/><br/>
+
+      <label for="failedOrPendingCases">Get Failed Cases Or Pending Test Cases:</label>
+      <select name="failedOrPendingCases" id="failedOrPendingCases" onchange="check()">
+        <option value="0" selected disabled>--Select--</option>
+        <option value="All">All</option>
+<option value="Failed Cases">Failed Cases</option>
+<option value="Pending Cases">Pending Cases</option>
+      </select>
+      <br/><br/>
+
+      <label for="failureTypes">Failure Types:</label>
+      <select name="failureTypes" id="failureTypes" disabled>
+        <option value="0" selected disabled>--Select--</option>
+        <option value="All">All</option>
+<option value="Validation">Validation</option>
+<option value="Functional">Functional</option>
+      </select>
+      <br/><br/>
+
+      <label for="jobRelatedOrNot">Job Related Or Not:</label>
+      <select name="jobRelatedOrNot" id="jobRelatedOrNot">
+        <option value="0" selected disabled>--Select--</option>
+        <option value="All">All</option>
+<option value="Jobs">Jobs</option>
+<option value="NonJob">NonJob</option>
+      </select>
+      <br/><br/>
+
+      <label for="dbValidations">DB Validations:</label>
+      <select name="dbValidations" id="dbValidations">
+        <option value="0" selected disabled>--Select--</option>
+        <option value="All">All</option>
+<option value="True">True</option>
+<option value="False">False</option>
+      </select>
+      <br/><br/>
+
+      <button type="button" onclick="captureDetails()">Submit</button>
+    </div>
+  </form>
+
+  <div id="output"></div>
+
+</body>
+</html>
